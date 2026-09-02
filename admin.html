@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | Tienda Tech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Encabezado -->
+        <div class="header">
+            <h1>🔐 <span>Panel Admin</span></h1>
+            <div class="header-actions">
+                <span class="badge badge-admin" id="adminInfo">
+                    🔑 Cargando...
+                </span>
+                <button class="btn btn-primary" onclick="abrirModalAgregar()">
+                    + Agregar Producto
+                </button>
+                <button class="btn btn-secondary" onclick="cerrarSesion()">🚪 Salir</button>
+            </div>
+        </div>
+
+        <!-- Grid de Productos -->
+        <div id="listaProductos" class="product-grid"></div>
+    </div>
+
+    <!-- Modal para Agregar/Editar -->
+    <div id="modalProducto" class="modal-overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h2 id="modalTitulo">Nuevo Producto</h2>
+                <button class="modal-close" onclick="cerrarModal()">✕</button>
+            </div>
+            <form id="formProducto">
+                <input type="hidden" id="productoId">
+                
+                <div class="form-group">
+                    <label>Nombre del Producto</label>
+                    <input type="text" id="nombre" placeholder="Ej: Notebook Pro" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Precio (CLP)</label>
+                    <input type="number" id="precio" placeholder="Ej: 500000" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Descripción</label>
+                    <textarea id="descripcion" placeholder="Descripción del producto" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>URL de la Imagen</label>
+                    <input type="text" id="imagen" placeholder="Ej: img/producto.jpg">
+                    <small style="color: var(--text-muted); font-size: 0.75rem;">Deja en blanco para usar imagen por defecto</small>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" onclick="cerrarModal()">Cancelar</button>
+                    <button type="submit" class="btn btn-success" id="btnGuardar">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Tienda Tech</h4>
+                <p>Tu tienda de tecnología confiable desde 2024</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces</h4>
+                <a href="productos.html">Productos</a>
+                <a href="#">Ofertas</a>
+                <a href="#">Contacto</a>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>📧 info@tiendatech.com</p>
+                <p>📞 +56 9 1234 5678</p>
+                <p>📍 Santiago, Chile</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2024 <span>Tienda Tech</span> - Todos los derechos reservados
+        </div>
+    </footer>
+
+    <script src="login.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
