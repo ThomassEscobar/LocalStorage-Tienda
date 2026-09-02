@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle Producto | Tienda Tech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header" style="border-bottom: none; padding-bottom: 1rem;">
+            <h1>📦 <span>Detalle del Producto</span></h1>
+            <div class="header-actions">
+                <a href="productos.html" class="btn btn-outline">← Volver</a>
+            </div>
+        </div>
+
+        <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem; max-width: 600px; margin: 0 auto;">
+            <img id="imagen" width="100%" style="border-radius: var(--radius); margin-bottom: 1.5rem; background: var(--border);">
+            <h2 id="nombre" style="font-size: 1.5rem; margin-bottom: 0.5rem;"></h2>
+            <p id="precio" style="font-size: 1.75rem; font-weight: 700; color: var(--primary); margin-bottom: 1rem;"></p>
+            <p id="descripcion" style="color: var(--text-muted); line-height: 1.6;"></p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Tienda Tech</h4>
+                <p>Tu tienda de tecnología confiable desde 2024</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces</h4>
+                <a href="productos.html">Productos</a>
+                <a href="#">Ofertas</a>
+                <a href="#">Contacto</a>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>📧 info@tiendatech.com</p>
+                <p>📞 +56 9 1234 5678</p>
+                <p>📍 Santiago, Chile</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2024 <span>Tienda Tech</span> - Todos los derechos reservados
+        </div>
+    </footer>
+
+    <script src="detalle.js"></script>
+</body>
+</html>
