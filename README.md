@@ -1,11 +1,5 @@
 # 📦 Tienda Tech - Sistema de Gestión de Productos con Login
 
-> ⚠️ **PROYECTO DEMOSTRATIVO - SOLO PARA FINES EDUCATIVOS**  
-> Este proyecto es un ejemplo de aprendizaje y **NO debe ser utilizado en entornos de producción**.  
-> Las contraseñas se almacenan en texto plano y no hay medidas de seguridad reales.
-
----
-
 ## 📋 Descripción
 
 **Tienda Tech** es una aplicación web **demostrativa** que implementa un sistema de autenticación con registro de usuarios, login y un CRUD completo de productos con separación de roles. Este proyecto ha sido desarrollado **exclusivamente con fines educativos** para demostrar conceptos básicos de desarrollo web.
@@ -17,6 +11,14 @@
 - Practicar la **manipulación del DOM**
 - Conocer el uso de **LocalStorage** para persistencia de datos
 - Comprender la **separación de roles** (Admin/Usuario)
+
+---
+
+> ⚠️ **PROYECTO DEMOSTRATIVO - SOLO PARA FINES EDUCATIVOS**  
+> Este proyecto es un ejemplo de aprendizaje y **NO debe ser utilizado en entornos de producción**.  
+> Las contraseñas se almacenan en texto plano y no hay medidas de seguridad reales.
+
+---
 
 ### ⚠️ Limitaciones del Proyecto
 | Aspecto | Estado | Explicación |
